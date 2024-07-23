@@ -1,0 +1,6 @@
+[submodule "ComfyUI"]
+	path = ComfyUI
+	url = https://github.com/JeS24/ComfyUI.git
+[submodule "MANIQA"]
+	path = MANIQA
+	url = ./MANIQA
