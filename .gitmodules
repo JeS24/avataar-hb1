@@ -3,4 +3,5 @@
 	url = https://github.com/JeS24/ComfyUI.git
 [submodule "MANIQA"]
 	path = MANIQA
-	url = ./MANIQA
+	url = https://github.com/JeS24/MANIQA.git
+	branch = avataar
