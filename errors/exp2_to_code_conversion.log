@@ -1,0 +1,65 @@
+❯ pyl comfyui_to_python.py -i 3_work.json      
+Total VRAM 24260 MB, total RAM 128579 MB
+pytorch version: 2.3.1
+Set vram state to: NORMAL_VRAM
+Device: cuda:0 NVIDIA GeForce RTX 3090 : native
+Using pytorch cross attention
+[Prompt Server] web root: ./avataar-hb1/ComfyUI/ComfyUI-to-Python-Extension/../web
+Traceback (most recent call last):
+  File "./avataar-hb1/ComfyUI/ComfyUI-to-Python-Extension/../nodes.py", line 1931, in load_custom_node
+    module_spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "./avataar-hb1/ComfyUI/custom_nodes/ComfyUI-Manager/__init__.py", line 6, in <module>
+    from .glob import manager_server
+  File "./avataar-hb1/ComfyUI/custom_nodes/ComfyUI-Manager/glob/manager_server.py", line 18, in <module>
+    import manager_core as core
+ModuleNotFoundError: No module named 'manager_core'
+
+Cannot import ./avataar-hb1/ComfyUI/custom_nodes/ComfyUI-Manager module for custom nodes: No module named 'manager_core'
+Total VRAM 24260 MB, total RAM 128579 MB
+pytorch version: 2.3.1
+Set vram state to: NORMAL_VRAM
+Device: cuda:0 NVIDIA GeForce RTX 3090 : native
+[comfyui_controlnet_aux] | INFO -> Using ckpts path: ./avataar-hb1/ComfyUI/custom_nodes/comfyui_controlnet_aux/ckpts
+[comfyui_controlnet_aux] | INFO -> Using symlinks: False
+[comfyui_controlnet_aux] | INFO -> Using ort providers: ['CUDAExecutionProvider', 'DirectMLExecutionProvider', 'OpenVINOExecutionProvider', 'ROCMExecutionProvider', 'CPUExecutionProvider', 'CoreMLExecutionProvider']
+./avataar-hb1/ComfyUI/custom_nodes/comfyui_controlnet_aux/node_wrappers/dwpose.py:26: UserWarning: DWPose: Onnxruntime not found or doesn't come with acceleration providers, switch to OpenCV with CPU device. DWPose might run very slowly
+  warnings.warn("DWPose: Onnxruntime not found or doesn't come with acceleration providers, switch to OpenCV with CPU device. DWPose might run very slowly")
+
+Import times for custom nodes:
+   0.0 seconds: ./avataar-hb1/ComfyUI/custom_nodes/websocket_image_save.py
+   0.0 seconds: ./avataar-hb1/ComfyUI/custom_nodes/ComfyUI_IPAdapter_plus
+   0.0 seconds: ./avataar-hb1/ComfyUI/custom_nodes/ComfyUI_KSamplerTimer
+   0.0 seconds: ./avataar-hb1/ComfyUI/custom_nodes/ComfyUI-dpmpp_2m_alt-Sampler
+   0.0 seconds: ./avataar-hb1/ComfyUI/custom_nodes/ComfyUI-Custom-Scripts
+   0.0 seconds: ./avataar-hb1/ComfyUI/custom_nodes/comfyui-browser
+   0.0 seconds: ./avataar-hb1/ComfyUI/custom_nodes/ComfyUI_UltimateSDUpscale
+   0.0 seconds: ./avataar-hb1/ComfyUI/custom_nodes/ComfyUI_essentials
+   0.0 seconds: ./avataar-hb1/ComfyUI/custom_nodes/ComfyUI_Comfyroll_CustomNodes
+   0.0 seconds (IMPORT FAILED): ./avataar-hb1/ComfyUI/custom_nodes/ComfyUI-Manager
+   0.0 seconds: ./avataar-hb1/ComfyUI/custom_nodes/ComfyUI-Inspire-Pack
+   0.0 seconds: ./avataar-hb1/ComfyUI/custom_nodes/comfyui_controlnet_aux
+   0.1 seconds: ./avataar-hb1/ComfyUI/custom_nodes/comfyui-art-venture
+   0.2 seconds: ./avataar-hb1/ComfyUI/custom_nodes/ComfyUI-KJNodes
+   0.4 seconds: ./avataar-hb1/ComfyUI/custom_nodes/ComfyUI-J
+   0.6 seconds: ./avataar-hb1/ComfyUI/custom_nodes/was-node-suite-comfyui
+
+Traceback (most recent call last):
+  File "./avataar-hb1/ComfyUI/ComfyUI-to-Python-Extension/comfyui_to_python.py", line 574, in <module>
+    ComfyUItoPython(
+  File "./avataar-hb1/ComfyUI/ComfyUI-to-Python-Extension/comfyui_to_python.py", line 523, in __init__
+    self.execute()
+  File "./avataar-hb1/ComfyUI/ComfyUI-to-Python-Extension/comfyui_to_python.py", line 545, in execute
+    generated_code = code_generator.generate_workflow(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "./avataar-hb1/ComfyUI/ComfyUI-to-Python-Extension/comfyui_to_python.py", line 287, in generate_workflow
+    final_code = self.assemble_python_code(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "./avataar-hb1/ComfyUI/ComfyUI-to-Python-Extension/comfyui_to_python.py", line 410, in assemble_python_code
+    final_code = black.format_str(final_code, mode=black.Mode())
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "src/black/__init__.py", line 1225, in format_str
+  File "src/black/__init__.py", line 1239, in _format_str_once
+  File "src/black/parsing.py", line 90, in lib2to3_parse
+black.parsing.InvalidInput: Cannot parse: 191:152:                      saveimage_57 = saveimage.save_images(filename_prefix=get_value_at_index(stringconstant_62, 0), images=get_value_at_index(depthanythingpreprocessor_21:0, 0))
