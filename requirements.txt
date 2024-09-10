@@ -29,7 +29,7 @@ colour-science==0.4.4
 comm @ file:///home/conda/feedstock_root/build_artifacts/comm_1710320294760/work
 compel==2.0.3
 contourpy==1.2.1
-cryptography==42.0.8
+cryptography==43.0.1
 cssselect2==0.7.0
 cstr @ git+https://github.com/WASasquatch/cstr@0520c29a18a7a869a6e5983861d6f7a4c86f8e9b
 cycler==0.12.1
