@@ -171,7 +171,7 @@ scikit-learn==1.5.1
 scipy==1.14.0
 segment-anything==1.0
 sentencepiece==0.2.0
-setuptools==70.3.0
+setuptools==78.1.1
 shapely==2.0.5
 shellingham==1.5.4
 six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
