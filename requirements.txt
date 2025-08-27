@@ -132,7 +132,7 @@ pooch==1.8.2
 portalocker==2.10.1
 prettytable==3.10.2
 prompt_toolkit @ file:///home/conda/feedstock_root/build_artifacts/prompt-toolkit_1718047967974/work
-protobuf==4.25.3
+protobuf==4.25.8
 psutil==6.0.0
 ptyprocess @ file:///home/conda/feedstock_root/build_artifacts/ptyprocess_1609419310487/work/dist/ptyprocess-0.7.0-py2.py3-none-any.whl
 pure-eval @ file:///home/conda/feedstock_root/build_artifacts/pure_eval_1642875951954/work
